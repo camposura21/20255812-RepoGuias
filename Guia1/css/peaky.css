@@ -1,0 +1,56 @@
+/* Estilos para la página de Peaky Blinders */
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #1c1c1c;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+#titulo {
+    font-family: 'Oswald', sans-serif;
+    color: #c0392b;
+    font-size: 4em;
+    letter-spacing: 3px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.texto-intro {
+    font-size: 1.2em;
+    text-align: justify;
+    width: 80%;
+    margin: 20px auto;
+}
+
+.imagen {
+    width: 80%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+.bloque {
+    width: 80%;
+    margin: 30px auto;
+}
+
+.bloque h2 {
+    color: #c0392b;
+    font-size: 1.6em;
+    text-align: left;
+}
+
+.parrafo {
+    font-size: 1em;
+    text-align: justify;
+}
+
+.nombre {
+    font-weight: bold;
+    color: #d4af37;
+}
+
