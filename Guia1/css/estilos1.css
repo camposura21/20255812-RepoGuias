@@ -1,0 +1,34 @@
+/* Reglas de estilo del Ejercicio 1.
+   Antes estaban embebidas en las etiquetas HTML (atributo style)
+   y ahora se definen en este archivo externo. */
+
+body {
+    background-color: lightblue;
+}
+
+.contenedor {
+    font-size: 20px;
+}
+
+h2 {
+    text-decoration: underline;
+    color: white;
+}
+
+.parrafo1 {
+    color: navy;
+    font-weight: bold;
+}
+
+.parrafo2 {
+    text-transform: uppercase;
+    text-align: justify;
+}
+
+.parrafo3 {
+    font-size: 12px;
+}
+
+.termino {
+    font-style: italic;
+}

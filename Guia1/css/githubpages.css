@@ -1,0 +1,46 @@
+/* Estilos de la pagina de inicio de la Guia 1 */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9fafb;
+    color: #2c3e50;
+    line-height: 1.6;
+}
+
+.titulo {
+    font-family: 'Montserrat', sans-serif;
+    color: #2980b9;
+    font-size: 2.5em;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.grupo {
+    width: 80%;
+    margin: 30px auto;
+}
+
+.grupo h2 {
+    color: #e74c3c;
+    font-size: 1.8em;
+}
+
+.lista {
+    font-size: 1.1em;
+}
+
+.lista li {
+    margin-bottom: 10px;
+}
+
+a {
+    color: #8e44ad;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+a:hover {
+    color: #9b59b6;
+    text-decoration: underline;
+}
