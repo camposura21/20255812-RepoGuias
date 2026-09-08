@@ -1,0 +1,484 @@
+/* ===========================================================
+   El Barrilito - Recreación mejorada del sitio
+   Paleta basada en el logo: crema, amarillo/dorado y verde teal
+   =========================================================== */
+
+:root {
+    --crema: #f6f2e6;
+    --crema-oscura: #ece5d2;
+    --amarillo: #f2a72c;
+    --amarillo-oscuro: #e0901a;
+    --teal: #14706e;
+    --teal-oscuro: #0f5453;
+    --naranja: #e0602c;
+    --texto: #33322c;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Nunito', Arial, sans-serif;
+    color: var(--texto);
+    background-color: var(--crema);
+    line-height: 1.7;
+}
+
+/* ---------- Cabecera y navegación ---------- */
+
+.cabecera {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: var(--crema);
+    border-bottom: 3px solid var(--teal);
+    text-align: center;
+    padding: 18px 20px 0;
+}
+
+.marca {
+    font-family: 'Baloo 2', sans-serif;
+    line-height: 1;
+}
+
+.marca-el {
+    display: block;
+    color: var(--amarillo);
+    font-weight: 800;
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+}
+
+.marca-nombre {
+    display: block;
+    color: var(--amarillo);
+    font-weight: 800;
+    font-size: 2.8rem;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 0 var(--amarillo-oscuro);
+}
+
+.marca-desde {
+    display: block;
+    color: var(--teal);
+    font-weight: 700;
+    font-size: 0.9rem;
+    letter-spacing: 3px;
+}
+
+.marca-lema {
+    display: block;
+    color: var(--teal);
+    font-style: italic;
+    font-size: 1rem;
+    margin-top: 2px;
+}
+
+.navegacion {
+    margin-top: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px 22px;
+    padding-bottom: 12px;
+}
+
+.navegacion a {
+    color: var(--teal-oscuro);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.95rem;
+    padding: 4px 2px;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.2s, color 0.2s;
+}
+
+.navegacion a:hover {
+    color: var(--naranja);
+    border-bottom-color: var(--naranja);
+}
+
+/* ---------- Hero ---------- */
+
+.hero {
+    background:
+        linear-gradient(rgba(15, 84, 83, 0.72), rgba(15, 84, 83, 0.72)),
+        url("https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1400&q=80") center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 90px 20px;
+}
+
+.hero-contenido {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.hero-superior {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 700;
+    color: var(--amarillo);
+    font-size: 0.9rem;
+}
+
+.hero-titulo {
+    font-family: 'Baloo 2', sans-serif;
+    font-size: 2.8rem;
+    line-height: 1.15;
+    margin: 14px 0 18px;
+}
+
+.hero-texto {
+    font-size: 1.15rem;
+    margin-bottom: 28px;
+}
+
+.hero-botones {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+/* ---------- Botones ---------- */
+
+.boton {
+    display: inline-block;
+    padding: 12px 26px;
+    border-radius: 30px;
+    font-weight: 700;
+    text-decoration: none;
+    font-family: 'Baloo 2', sans-serif;
+    transition: transform 0.15s, background-color 0.2s;
+}
+
+.boton:hover {
+    transform: translateY(-2px);
+}
+
+.boton-primario {
+    background-color: var(--amarillo);
+    color: var(--teal-oscuro);
+}
+
+.boton-primario:hover {
+    background-color: var(--amarillo-oscuro);
+}
+
+.boton-secundario {
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.boton-secundario:hover {
+    background-color: #fff;
+    color: var(--teal-oscuro);
+}
+
+/* ---------- Secciones ---------- */
+
+.seccion {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 70px 24px;
+}
+
+.seccion-titulo {
+    font-family: 'Baloo 2', sans-serif;
+    color: var(--teal);
+    font-size: 2.1rem;
+    text-align: center;
+}
+
+.seccion-titulo.alineado-izq {
+    text-align: left;
+}
+
+.seccion-subtitulo {
+    text-align: center;
+    color: var(--naranja);
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+/* ---------- Historia ---------- */
+
+.historia-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.historia-texto p {
+    margin-bottom: 16px;
+}
+
+.historia-texto .boton {
+    margin-top: 8px;
+}
+
+.historia-datos {
+    list-style: none;
+    background-color: var(--teal);
+    color: #fff;
+    border-radius: 16px;
+    padding: 26px;
+}
+
+.historia-datos li {
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    font-weight: 600;
+}
+
+.historia-datos li:last-child {
+    border-bottom: none;
+}
+
+.dato-numero {
+    display: block;
+    font-family: 'Baloo 2', sans-serif;
+    font-size: 1.8rem;
+    color: var(--amarillo);
+}
+
+/* ---------- Especialidades ---------- */
+
+.especialidades {
+    background-color: var(--crema-oscura);
+    max-width: none;
+}
+
+.especialidades .seccion-titulo,
+.especialidades .seccion-subtitulo,
+.platos {
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.platos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 26px;
+}
+
+.plato {
+    background-color: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(15, 84, 83, 0.12);
+    transition: transform 0.18s, box-shadow 0.18s;
+}
+
+.plato:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 26px rgba(15, 84, 83, 0.2);
+}
+
+.plato img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    display: block;
+}
+
+.plato-cuerpo {
+    padding: 18px 20px 22px;
+}
+
+.plato-cuerpo h3 {
+    font-family: 'Baloo 2', sans-serif;
+    color: var(--teal);
+    margin-bottom: 6px;
+}
+
+.plato-precio {
+    display: inline-block;
+    margin-top: 12px;
+    background-color: var(--amarillo);
+    color: var(--teal-oscuro);
+    font-weight: 800;
+    padding: 4px 14px;
+    border-radius: 20px;
+}
+
+/* ---------- Galería ---------- */
+
+.galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.galeria-grid img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: filter 0.2s, transform 0.2s;
+}
+
+.galeria-grid img:hover {
+    filter: brightness(1.08);
+    transform: scale(1.03);
+}
+
+/* ---------- Ambiente ---------- */
+
+.ambiente {
+    background-color: var(--teal);
+    color: #fff;
+    max-width: none;
+}
+
+.ambiente-grid {
+    max-width: 1080px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.ambiente .seccion-titulo {
+    color: var(--amarillo);
+}
+
+.ambiente-texto p {
+    margin: 16px 0;
+}
+
+.lista-check {
+    list-style: none;
+}
+
+.lista-check li {
+    padding: 8px 0 8px 28px;
+    position: relative;
+    font-weight: 600;
+}
+
+.lista-check li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--amarillo);
+    font-weight: 800;
+}
+
+.ambiente-img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+/* ---------- Visítanos ---------- */
+
+.visitanos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.info-tarjeta {
+    background-color: #fff;
+    border-top: 4px solid var(--amarillo);
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 4px 14px rgba(15, 84, 83, 0.1);
+}
+
+.info-tarjeta h3 {
+    font-family: 'Baloo 2', sans-serif;
+    color: var(--teal);
+    margin-bottom: 8px;
+}
+
+/* ---------- Pie ---------- */
+
+.pie {
+    background-color: var(--teal-oscuro);
+    color: var(--crema);
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.pie-marca {
+    font-family: 'Baloo 2', sans-serif;
+    font-size: 1.8rem;
+    color: var(--amarillo);
+    letter-spacing: 2px;
+}
+
+.pie-redes {
+    margin: 14px 0;
+}
+
+.pie-redes a {
+    color: var(--crema);
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: 700;
+}
+
+.pie-redes a:hover {
+    color: var(--amarillo);
+}
+
+.pie-credito {
+    margin-top: 10px;
+    font-size: 0.85rem;
+    opacity: 0.7;
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 900px) {
+    .historia-grid,
+    .ambiente-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .platos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .galeria-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .visitanos-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 560px) {
+    .marca-nombre {
+        font-size: 2rem;
+    }
+
+    .hero-titulo {
+        font-size: 2rem;
+    }
+
+    .platos,
+    .galeria-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .seccion {
+        padding: 50px 18px;
+    }
+}
