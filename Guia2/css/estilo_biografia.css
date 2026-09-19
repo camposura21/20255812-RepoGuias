@@ -1,0 +1,162 @@
+:root {
+    --color-fondo: #111111;
+    --color-superficie: #1b1b1b;
+    --color-superficie-alt: #242424;
+    --color-rojo: #b3202a;
+    --color-texto: #e5e5e5;
+    --color-texto-tenue: #b0b0b0;
+    --color-borde: #333333;
+
+    --fuente-titulos: "Oswald", Impact, sans-serif;
+    --fuente-texto: "Roboto", Arial, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 18px;
+}
+
+body {
+    margin: 0;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    font-family: var(--fuente-texto);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--color-superficie);
+    border-bottom: 4px solid var(--color-rojo);
+    padding: 50px 20px;
+    text-align: center;
+}
+
+h1 {
+    font-family: var(--fuente-titulos);
+    font-size: 3rem;
+    margin: 0;
+}
+
+.lema {
+    color: var(--color-texto-tenue);
+    margin: 8px 0 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-superficie-alt);
+}
+
+nav > a {
+    color: var(--color-texto);
+    text-decoration: none;
+    padding: 14px 20px;
+}
+
+nav a:hover {
+    background-color: var(--color-rojo);
+}
+
+nav a:active {
+    color: var(--color-texto-tenue);
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 86%;
+    max-width: 860px;
+}
+
+.bloque {
+    padding-top: 40px;
+}
+
+h2 {
+    font-family: var(--fuente-titulos);
+    font-size: 1.7rem;
+    color: var(--color-rojo);
+    border-bottom: 1px solid var(--color-borde);
+    padding-bottom: 8px;
+}
+
+.bloque p {
+    color: var(--color-texto-tenue);
+}
+
+img[alt] {
+    display: block;
+    width: 100%;
+}
+
+.presentacion {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.presentacion img {
+    width: 300px;
+    max-width: 100%;
+    align-self: stretch;
+    object-fit: cover;
+    object-position: 48% 50%;
+}
+
+.presentacion-texto {
+    flex: 1 1 300px;
+}
+
+.presentacion-texto p:first-child:first-letter {
+    color: var(--color-rojo);
+    font-size: 2rem;
+}
+
+.presentacion-texto p:first-child:first-line {
+    color: var(--color-texto);
+}
+
+.metas {
+    padding-left: 0;
+    list-style: none;
+}
+
+.metas > li {
+    padding: 10px 16px;
+    border-left: 4px solid var(--color-rojo);
+}
+
+.metas > li + li {
+    margin-top: 10px;
+}
+
+.metas > li:nth-child(odd) {
+    background-color: var(--color-superficie);
+}
+
+.metas > li:nth-child(even) {
+    background-color: var(--color-superficie-alt);
+}
+
+.metas h3 {
+    font-family: var(--fuente-titulos);
+    font-weight: 500;
+    color: var(--color-texto);
+    margin: 0 0 4px;
+}
+
+.metas li p {
+    margin: 0;
+}
+
+footer {
+    color: var(--color-texto-tenue);
+    font-size: 0.8rem;
+    margin-top: 50px;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid var(--color-borde);
+}

@@ -1,16 +1,3 @@
-/* ===========================================================
-   El Barrilito · Rediseño premium de la Landing Page
-   Cocina mexicana casera + conchería tradicional · San Miguel, SV
-
-   Paleta cálida tradicional:
-     - Barro / terracota ...... #8B261D
-     - Amarillo maíz / dorado .. #E09F3E
-     - Verde chile ............. #2A5A3B
-     - Fondo hueso / crema ..... #FDFBF7
-   Tipografías: Playfair Display (títulos) + Poppins (cuerpo)
-   =========================================================== */
-
-/* ---------- Variables de tema ---------- */
 :root {
     --barro: #8B261D;
     --barro-oscuro: #5F1712;
@@ -22,11 +9,11 @@
     --hueso: #FDFBF7;
     --hueso-sombra: #F1EADD;
     --linea: #E4D9C6;
-    --tinta: #2B211C;        /* texto principal */
-    --tinta-suave: #6E6057;  /* texto secundario */
+    --tinta: #2B211C;
+    --tinta-suave: #6E6057;
     --blanco: #FFFFFF;
 
-    --radio: 4px;            /* esquinas sobrias, editoriales */
+    --radio: 4px;
     --radio-media: 8px;
     --sombra-suave: 0 18px 40px -18px rgba(43, 33, 28, 0.28);
     --sombra-fuerte: 0 34px 60px -20px rgba(43, 33, 28, 0.40);
@@ -34,7 +21,6 @@
     --ancho-max: 1180px;
 }
 
-/* ---------- Reset básico ---------- */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -43,7 +29,7 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 96px; /* compensa el header fijo al navegar con anclas */
+    scroll-padding-top: 96px;
     -webkit-text-size-adjust: 100%;
 }
 
@@ -74,7 +60,6 @@ a {
     color: var(--barro-oscuro);
 }
 
-/* Utilidad para lectores de pantalla */
 .sr-only {
     position: absolute;
     width: 1px;
@@ -84,9 +69,6 @@ a {
     white-space: nowrap;
 }
 
-/* ===========================================================
-   TIPOGRAFÍA COMÚN DE ENCABEZADOS
-   =========================================================== */
 .seccion-encabezado {
     text-align: center;
     max-width: 620px;
@@ -137,9 +119,6 @@ a {
     font-size: 1.02rem;
 }
 
-/* ===========================================================
-   BOTONES
-   =========================================================== */
 .btn {
     --btn-fondo: var(--maiz);
     --btn-texto: var(--barro-oscuro);
@@ -161,7 +140,6 @@ a {
     z-index: 0;
 }
 
-/* Relleno que se desliza en el hover */
 .btn::after {
     content: "";
     position: absolute;
@@ -204,9 +182,6 @@ a {
     transform: translateY(-4px);
 }
 
-/* ===========================================================
-   HEADER
-   =========================================================== */
 .cabecera {
     position: sticky;
     top: 0;
@@ -228,7 +203,6 @@ a {
     flex-wrap: wrap;
 }
 
-/* --- Logo --- */
 .logo {
     display: flex;
     flex-direction: column;
@@ -261,7 +235,6 @@ a {
     margin-top: 2px;
 }
 
-/* --- Navegación --- */
 .nav-principal {
     display: flex;
     align-items: center;
@@ -315,7 +288,6 @@ a {
     transform: translateY(-2px);
 }
 
-/* --- Redes sociales --- */
 .redes {
     display: flex;
     gap: 8px;
@@ -341,9 +313,6 @@ a {
     transform: translateY(-3px);
 }
 
-/* ===========================================================
-   HERO
-   =========================================================== */
 .hero {
     position: relative;
     min-height: 92vh;
@@ -357,7 +326,6 @@ a {
     isolation: isolate;
 }
 
-/* Overlay con sombra + viñeta para legibilidad */
 .hero-overlay {
     position: absolute;
     inset: 0;
@@ -422,7 +390,6 @@ a {
     flex-wrap: wrap;
 }
 
-/* Indicador de scroll */
 .hero-scroll {
     position: absolute;
     bottom: 42px;
@@ -451,9 +418,6 @@ a {
     100% { opacity: 0; transform: translateY(12px); }
 }
 
-/* ===========================================================
-   CINTA DE SELLOS (marquee)
-   =========================================================== */
 .cinta {
     background: var(--barro);
     color: var(--maiz-claro);
@@ -488,9 +452,6 @@ a {
     .hero-scroll span { animation: none; }
 }
 
-/* ===========================================================
-   CONTENEDOR DE SECCIONES
-   =========================================================== */
 .destacados,
 .menu,
 .nosotros,
@@ -500,9 +461,6 @@ a {
     padding: 110px 32px;
 }
 
-/* ===========================================================
-   DESTACADOS · tarjetas de categorías (CSS Grid)
-   =========================================================== */
 .cards-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -611,9 +569,6 @@ a {
     gap: 14px;
 }
 
-/* ===========================================================
-   MENÚ · vista previa tipo carta con líneas guía
-   =========================================================== */
 .menu {
     position: relative;
 }
@@ -623,7 +578,6 @@ a {
     position: absolute;
     inset: 0;
     background: var(--hueso-sombra);
-    /* se extiende a todo el ancho de la ventana */
     box-shadow: 0 0 0 100vmax var(--hueso-sombra);
     clip-path: inset(0 -100vmax);
     z-index: -1;
@@ -667,7 +621,6 @@ a {
     color: var(--tinta);
 }
 
-/* Línea de puntos entre el nombre y el precio (clásico de carta) */
 .menu-lista li::after {
     content: "";
     flex: 1;
@@ -690,9 +643,6 @@ a {
     margin-top: 60px;
 }
 
-/* ===========================================================
-   NOSOTROS
-   =========================================================== */
 .nosotros-grid {
     display: grid;
     grid-template-columns: 1fr 1.05fr;
@@ -712,7 +662,6 @@ a {
     box-shadow: var(--sombra-suave);
 }
 
-/* Marco decorativo */
 .nosotros-media::before {
     content: "";
     position: absolute;
@@ -803,9 +752,6 @@ a {
     font-weight: 300;
 }
 
-/* ===========================================================
-   CONTACTO Y HORARIOS
-   =========================================================== */
 .contacto-horarios {
     position: relative;
 }
@@ -870,7 +816,6 @@ a {
     color: var(--chile);
 }
 
-/* Tabla de horarios */
 .tabla-horarios {
     width: 100%;
     border-collapse: collapse;
@@ -900,9 +845,6 @@ a {
     border-bottom: none;
 }
 
-/* ===========================================================
-   FOOTER
-   =========================================================== */
 .pie {
     background: var(--barro-oscuro);
     color: rgba(255, 255, 255, 0.78);
@@ -979,11 +921,6 @@ a {
     opacity: 0.7;
 }
 
-/* ===========================================================
-   RESPONSIVE · Media Queries
-   =========================================================== */
-
-/* Portátiles pequeños / tablets grandes */
 @media (max-width: 1024px) {
     .nosotros-grid {
         gap: 56px;
@@ -997,7 +934,6 @@ a {
     }
 }
 
-/* Tablet */
 @media (max-width: 900px) {
     .cabecera-inner {
         justify-content: center;
@@ -1051,7 +987,6 @@ a {
     }
 }
 
-/* Móvil */
 @media (max-width: 560px) {
     .cabecera-inner {
         padding: 14px 20px;
