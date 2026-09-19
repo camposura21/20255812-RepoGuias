@@ -1,7 +1,3 @@
-/* Reglas de estilo del Ejercicio 2.
-   Antes estaban dentro de la etiqueta <style> en el <head>
-   y ahora se definen en este archivo externo. */
-
 body{
     background-color: #E0E0E0;
     font-family: Arial, sans-serif;
@@ -31,7 +27,6 @@ div.contenido{
 .parrafo3{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-/*Esto cambio la fuente que los parrafos tenian*/
 div.autor{
     font-style: italic;
 }

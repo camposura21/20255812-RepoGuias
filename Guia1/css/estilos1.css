@@ -1,7 +1,3 @@
-/* Reglas de estilo del Ejercicio 1.
-   Antes estaban embebidas en las etiquetas HTML (atributo style)
-   y ahora se definen en este archivo externo. */
-
 body {
     background-color: lightblue;
 }
