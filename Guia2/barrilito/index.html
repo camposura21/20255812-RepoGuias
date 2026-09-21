@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Barrilito | Cocina mexicana casera y conchería en San Miguel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;700&family=DM+Sans:wght@400;500;700&family=Fraunces:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <header class="encabezado">
+        <nav class="nav" aria-label="Principal">
+            <div class="nav-lado">
+                <a href="index.html" aria-current="page">Inicio</a>
+                <a href="reservas.html">Reservas</a>
+            </div>
+            <a class="logo" href="index.html">El Barrilito<small>Conchería y cocina mexicana</small></a>
+            <div class="nav-lado nav-lado-der">
+                <a href="contacto.html">Contacto</a>
+                <a class="btn btn-borde" href="https://wa.me/50370000000" target="_blank" rel="noopener">Pedir</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <img class="hero-foto" src="https://images.unsplash.com/photo-1615870216519-2f9fa575fa5c?auto=format&fit=crop&w=2000&q=80" alt="Tacos con salsa de la casa servidos en la mesa">
+            <div class="hero-panel">
+                <p class="etiqueta anim" style="--orden: 1">Comida mexicana casera · San Miguel</p>
+                <h1 class="titulo-display anim" style="--orden: 2">Sazón de casa, <span class="acento">frescura de conchería</span></h1>
+                <p class="anim" style="--orden: 3">Antojitos, tacos y bebidas frías hechos como en casa, con recetas de familia y tortilla a mano.</p>
+                <div class="hero-acciones anim" style="--orden: 4">
+                    <a class="btn btn-maiz" href="reservas.html">Reservar mesa</a>
+                    <a class="enlace" href="#menu">Ver la carta</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="seccion" id="menu">
+            <div class="contenedor">
+                <div class="menu-cabecera revelar">
+                    <p class="etiqueta">Nuestra carta</p>
+                    <h2 class="titulo-seccion">Lo que sale de <span class="acento">nuestra cocina</span></h2>
+                </div>
+
+                <input class="pestana-radio" type="radio" name="carta" id="tab-tacos" checked>
+                <input class="pestana-radio" type="radio" name="carta" id="tab-antojitos">
+                <input class="pestana-radio" type="radio" name="carta" id="tab-concheria">
+
+                <div class="pestanas">
+                    <label for="tab-tacos">Tacos</label>
+                    <label for="tab-antojitos">Antojitos</label>
+                    <label for="tab-concheria">Conchería</label>
+                </div>
+
+                <div class="paneles">
+                    <div class="panel panel-tacos rejilla-productos">
+                        <article class="producto">
+                            <div class="producto-foto">
+                                <img src="https://images.unsplash.com/photo-1613514785940-daed07799d9b?auto=format&fit=crop&w=800&q=80" alt="Tacos al pastor con limón y bebida fría">
+                                <span class="insignia">De la casa</span>
+                            </div>
+                            <div class="producto-cuerpo">
+                                <h3>Tacos al pastor</h3>
+                                <p>Cerdo marinado con achiote, piña y cilantro sobre tortilla recién hecha.</p>
+                                <a class="enlace" href="https://wa.me/50370000000" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+                            </div>
+                        </article>
+                        <article class="producto">
+                            <div class="producto-foto">
+                                <img src="https://images.unsplash.com/photo-1599974579688-8dbdd335c77f?auto=format&fit=crop&w=800&q=80" alt="Tacos de barbacoa con cilantro y cebolla">
+                            </div>
+                            <div class="producto-cuerpo">
+                                <h3>Tacos de barbacoa</h3>
+                                <p>Res cocida lentamente, con cebolla, cilantro y limón.</p>
+                                <a class="enlace" href="https://wa.me/50370000000" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+                            </div>
+                        </article>
+                        <article class="producto">
+                            <div class="producto-foto">
+                                <img src="https://images.unsplash.com/photo-1624300629298-e9de39c13be5?auto=format&fit=crop&w=800&q=80" alt="Tacos de camarón con ensalada fresca">
+                            </div>
+                            <div class="producto-cuerpo">
+                                <h3>Tacos de camarón</h3>
+                                <p>Camarón salteado con ensalada fresca y salsa de la casa.</p>
+                                <a class="enlace" href="https://wa.me/50370000000" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="panel panel-antojitos rejilla-productos">
+                        <article class="producto">
+                            <div class="producto-foto">
+                                <img src="https://images.unsplash.com/photo-1599789197514-47270cd526b4?auto=format&fit=crop&w=800&q=80" alt="Chilaquiles con queso fresco y cilantro">
+                                <span class="insignia">Favorito</span>
+                            </div>
+                            <div class="producto-cuerpo">
+                                <h3>Chilaquiles de la casa</h3>
+                                <p>Tortilla dorada bañada en salsa, con queso fresco y cebolla.</p>
+                                <a class="enlace" href="https://wa.me/50370000000" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+                            </div>
+                        </article>
+                        <article class="producto">
+                            <div class="producto-foto">
+                                <img src="https://images.unsplash.com/photo-1618040996337-56904b7850b9?auto=format&fit=crop&w=800&q=80" alt="Quesadillas doradas con queso derretido">
+                            </div>
+                            <div class="producto-cuerpo">
+                                <h3>Quesadillas</h3>
+                                <p>Queso derretido en tortilla dorada, con salsa verde.</p>
+                                <a class="enlace" href="https://wa.me/50370000000" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+                            </div>
+                        </article>
+                        <article class="producto">
+                            <div class="producto-foto">
+                                <img src="https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?auto=format&fit=crop&w=800&q=80" alt="Tostadas surtidas servidas en plato">
+                            </div>
+                            <div class="producto-cuerpo">
+                                <h3>Tostadas surtidas</h3>
+                                <p>Tres tostadas crujientes con tinga, frijol y crema.</p>
+                                <a class="enlace" href="https://wa.me/50370000000" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="panel panel-concheria rejilla-productos">
+                        <article class="producto">
+                            <div class="producto-foto">
+                                <img src="https://images.unsplash.com/photo-1543353071-873f17a7a088?auto=format&fit=crop&w=800&q=80" alt="Limones frescos sobre mesa clara">
+                                <span class="insignia">Bien frío</span>
+                            </div>
+                            <div class="producto-cuerpo">
+                                <h3>Minuta de limón</h3>
+                                <p>Hielo raspado con limón y un toque de sal, bien fría.</p>
+                                <a class="enlace" href="https://wa.me/50370000000" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+                            </div>
+                        </article>
+                        <article class="producto">
+                            <div class="producto-foto">
+                                <img src="https://images.unsplash.com/photo-1541658016709-82535e94bc69?auto=format&fit=crop&w=800&q=80" alt="Bebida fría y cremosa servida en vaso">
+                            </div>
+                            <div class="producto-cuerpo">
+                                <h3>Frappé de la casa</h3>
+                                <p>Bebida fría y cremosa para acompañar el antojito.</p>
+                                <a class="enlace" href="https://wa.me/50370000000" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+                            </div>
+                        </article>
+                        <div class="producto-cta">
+                            <h3>Hay más en la carta</h3>
+                            <p>Horchata, cebada y ensalada de frutas, siempre frías.</p>
+                            <a class="btn btn-maiz" href="https://wa.me/50370000000" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="banda banda-salvia" id="nosotros">
+            <div class="contenedor dividido">
+                <div class="dividido-texto revelar">
+                    <p class="etiqueta">Nuestra historia</p>
+                    <h2 class="titulo-seccion">Cocina de familia, <span class="acento">mesa compartida</span></h2>
+                    <div class="subseccion">
+                        <h3>Sazón casera</h3>
+                        <p>La salsa se muele en molcajete y la tortilla se hace a mano. Recetas mexicanas de casa, sin atajos.</p>
+                    </div>
+                    <div class="subseccion">
+                        <h3>Conchería tradicional</h3>
+                        <p>Frescos, minutas y ensaladas de fruta bien frías para acompañar cada platillo, como en las conchas de siempre.</p>
+                    </div>
+                    <div class="subseccion">
+                        <h3>Un lugar para quedarse</h3>
+                        <p>Un salón cómodo para familias, amigos y celebraciones en el corazón de San Miguel.</p>
+                    </div>
+                    <a class="enlace" href="contacto.html">Cómo llegar</a>
+                </div>
+                <div class="dividido-foto revelar">
+                    <img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&w=1000&q=80" alt="Grupo de amigos compartiendo la mesa">
+                </div>
+            </div>
+        </section>
+
+        <section class="banda banda-arena cierre">
+            <div class="contenedor revelar">
+                <p class="etiqueta">Tu mesa te espera</p>
+                <h2 class="titulo-seccion">Reserva una mesa o celebra <span class="acento">tu evento</span> con nosotros</h2>
+                <p class="intro">Cumpleaños, reuniones o una comida en familia. Cuéntanos cuántos son y nosotros lo preparamos.</p>
+                <div class="cierre-acciones">
+                    <a class="btn btn-maiz" href="reservas.html">Reservar mesa o evento</a>
+                    <a class="btn btn-borde" href="contacto.html">Contacto y sugerencias</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="pie">
+        <div class="contenedor">
+            <div class="pie-rejilla">
+                <div>
+                    <p class="pie-marca">El Barrilito</p>
+                    <p class="pie-lema">Comida mexicana casera y conchería tradicional en San Miguel, El Salvador.</p>
+                </div>
+                <div>
+                    <h4>Navegar</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="index.html#menu">Carta</a></li>
+                        <li><a href="reservas.html">Reservas</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li>San Miguel, El Salvador</li>
+                        <li>Tel: (503) 2660-0000</li>
+                        <li>WhatsApp: (503) 7000-0000</li>
+                        <li>hola@elbarrilitosv.com</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Horario</h4>
+                    <ul>
+                        <li>Lun a jue: 10:00 a.m. a 8:00 p.m.</li>
+                        <li>Vie y sáb: 10:00 a.m. a 9:30 p.m.</li>
+                        <li>Domingo: 10:00 a.m. a 6:00 p.m.</li>
+                    </ul>
+                </div>
+            </div>
+            <p class="pie-legal">&copy; 2026 El Barrilito · Recreación con fines educativos, Guía 2 de Desarrollo Web I</p>
+        </div>
+    </footer>
+</body>
+</html>

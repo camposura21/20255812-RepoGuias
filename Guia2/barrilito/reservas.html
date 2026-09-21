@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas y eventos | El Barrilito</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;700&family=DM+Sans:wght@400;500;700&family=Fraunces:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <header class="encabezado">
+        <nav class="nav" aria-label="Principal">
+            <div class="nav-lado">
+                <a href="index.html">Inicio</a>
+                <a href="reservas.html" aria-current="page">Reservas</a>
+            </div>
+            <a class="logo" href="index.html">El Barrilito<small>Conchería y cocina mexicana</small></a>
+            <div class="nav-lado nav-lado-der">
+                <a href="contacto.html">Contacto</a>
+                <a class="btn btn-borde" href="https://wa.me/50370000000" target="_blank" rel="noopener">Pedir</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="encabezado-pagina">
+            <div class="contenedor dividido">
+                <div class="dividido-texto">
+                    <p class="etiqueta anim" style="--orden: 1">Reservas y eventos</p>
+                    <h1 class="titulo-display anim" style="--orden: 2">Reserva tu mesa <span class="acento">o tu celebración</span></h1>
+                    <p class="intro anim" style="--orden: 3">Cuéntanos cuántos son y cuándo llegan. Nosotros preparamos la mesa, tú disfrutas la sazón.</p>
+                    <a class="btn btn-maiz anim" style="--orden: 4" href="#formulario">Llenar el formulario</a>
+                </div>
+                <div class="dividido-foto anim" style="--orden: 3">
+                    <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=1000&q=80" alt="Mesa servida con copas y flores">
+                </div>
+            </div>
+        </section>
+
+        <section class="seccion">
+            <div class="contenedor">
+                <div class="menu-cabecera revelar">
+                    <p class="etiqueta">¿Qué celebramos?</p>
+                    <h2 class="titulo-seccion">Para cada <span class="acento">ocasión</span></h2>
+                </div>
+                <div class="rejilla-eventos">
+                    <article class="producto revelar">
+                        <div class="producto-foto">
+                            <img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&w=800&q=80" alt="Amigos compartiendo una comida">
+                        </div>
+                        <div class="producto-cuerpo">
+                            <h3>Mesa para compartir</h3>
+                            <p>Comidas en familia o con amigos, de 2 a 12 personas.</p>
+                            <a class="enlace" href="#formulario">Reservar</a>
+                        </div>
+                    </article>
+                    <article class="producto revelar">
+                        <div class="producto-foto">
+                            <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=800&q=80" alt="Globos de colores para una fiesta">
+                            <span class="insignia">Popular</span>
+                        </div>
+                        <div class="producto-cuerpo">
+                            <h3>Cumpleaños y fiestas</h3>
+                            <p>Decoramos tu mesa y armamos un menú para todo el grupo.</p>
+                            <a class="enlace" href="#formulario">Reservar</a>
+                        </div>
+                    </article>
+                    <article class="producto revelar">
+                        <div class="producto-foto">
+                            <img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=800&q=80" alt="Salón preparado para un evento">
+                        </div>
+                        <div class="producto-cuerpo">
+                            <h3>Eventos y reuniones</h3>
+                            <p>Reuniones de trabajo, graduaciones y celebraciones privadas.</p>
+                            <a class="enlace" href="#formulario">Reservar</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="banda banda-salvia" id="formulario">
+            <div class="contenedor">
+                <div class="formulario-cabecera revelar">
+                    <p class="etiqueta">Solicitud de reservación</p>
+                    <h2 class="titulo-seccion">Los datos de <span class="acento">tu visita</span></h2>
+                </div>
+                <div class="formulario-fila">
+                    <div>
+                        <div class="gracias" id="gracias">
+                            <h3>¡Gracias!</h3>
+                            <p>Recibimos tu solicitud. Te contactaremos para confirmar tu mesa o tu evento.</p>
+                            <a class="btn btn-maiz" href="index.html">Volver al inicio</a>
+                        </div>
+                        <form class="formulario" action="reservas.html#gracias" method="get">
+                            <fieldset class="campo campo-ancho">
+                                <legend>Tipo de reservación</legend>
+                                <div class="opciones">
+                                    <input type="radio" name="tipo" id="tipo-mesa" value="mesa" checked>
+                                    <label for="tipo-mesa">Mesa</label>
+                                    <input type="radio" name="tipo" id="tipo-cumple" value="cumpleanos">
+                                    <label for="tipo-cumple">Cumpleaños</label>
+                                    <input type="radio" name="tipo" id="tipo-evento" value="evento">
+                                    <label for="tipo-evento">Evento</label>
+                                    <input type="radio" name="tipo" id="tipo-otro" value="otro">
+                                    <label for="tipo-otro">Otro</label>
+                                </div>
+                            </fieldset>
+                            <div class="campo">
+                                <label for="nombre">Nombre</label>
+                                <input type="text" id="nombre" name="nombre" autocomplete="name" required>
+                            </div>
+                            <div class="campo">
+                                <label for="telefono">Teléfono</label>
+                                <input type="tel" id="telefono" name="telefono" autocomplete="tel" required>
+                            </div>
+                            <div class="campo campo-ancho">
+                                <label for="correo">Correo (opcional)</label>
+                                <input type="email" id="correo" name="correo" autocomplete="email">
+                            </div>
+                            <div class="campo">
+                                <label for="fecha">Fecha</label>
+                                <input type="date" id="fecha" name="fecha" required>
+                            </div>
+                            <div class="campo">
+                                <label for="hora">Hora</label>
+                                <select id="hora" name="hora" required>
+                                    <option value="">Elige una hora</option>
+                                    <option>10:00 a.m.</option>
+                                    <option>11:00 a.m.</option>
+                                    <option>12:00 m.</option>
+                                    <option>1:00 p.m.</option>
+                                    <option>2:00 p.m.</option>
+                                    <option>3:00 p.m.</option>
+                                    <option>4:00 p.m.</option>
+                                    <option>5:00 p.m.</option>
+                                    <option>6:00 p.m.</option>
+                                    <option>7:00 p.m.</option>
+                                </select>
+                            </div>
+                            <div class="campo">
+                                <label for="personas">Personas</label>
+                                <input type="number" id="personas" name="personas" min="1" max="80" value="2" required>
+                            </div>
+                            <fieldset class="campo">
+                                <legend>Zona preferida</legend>
+                                <div class="opciones">
+                                    <input type="radio" name="zona" id="zona-cualquiera" value="cualquiera" checked>
+                                    <label for="zona-cualquiera">Cualquiera</label>
+                                    <input type="radio" name="zona" id="zona-salon" value="salon">
+                                    <label for="zona-salon">Salón</label>
+                                    <input type="radio" name="zona" id="zona-aire" value="aire-libre">
+                                    <label for="zona-aire">Aire libre</label>
+                                </div>
+                            </fieldset>
+                            <div class="campo campo-ancho">
+                                <label for="comentarios">Comentarios</label>
+                                <textarea id="comentarios" name="comentarios" placeholder="Alergias, decoración, pastel, etc."></textarea>
+                            </div>
+                            <div class="formulario-envio">
+                                <button class="btn btn-maiz" type="submit">Enviar solicitud</button>
+                                <small>Te confirmamos por WhatsApp o llamada.</small>
+                            </div>
+                        </form>
+                    </div>
+                    <aside class="notas revelar">
+                        <div class="nota">
+                            <h3>Con anticipación</h3>
+                            <p>Para mesas de hasta 6 personas, reserva con un día de anticipación.</p>
+                        </div>
+                        <div class="nota">
+                            <h3>Grupos grandes</h3>
+                            <p>Para más de 12 personas, escríbenos con una semana de anticipación.</p>
+                        </div>
+                        <div class="nota">
+                            <h3>Eventos privados</h3>
+                            <p>Cuéntanos qué necesitas y armamos un menú y una mesa a tu medida.</p>
+                        </div>
+                        <div class="nota">
+                            <h3>Cambios</h3>
+                            <p>Si algo cambia, avísanos por WhatsApp con al menos 24 horas.</p>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <section class="seccion">
+            <div class="contenedor">
+                <div class="revelar">
+                    <p class="etiqueta">Preguntas frecuentes</p>
+                    <h2 class="titulo-seccion">Antes de <span class="acento">reservar</span></h2>
+                </div>
+                <div class="preguntas">
+                    <details class="pregunta">
+                        <summary>¿Cuánto tiempo me guardan la mesa?</summary>
+                        <p>Guardamos tu mesa 15 minutos después de la hora acordada. Si vas a tardar, avísanos por WhatsApp.</p>
+                    </details>
+                    <details class="pregunta">
+                        <summary>¿Puedo llevar pastel o decoración?</summary>
+                        <p>Sí. Coordina con nosotros para preparar el espacio y guardar el pastel hasta el momento de servirlo.</p>
+                    </details>
+                    <details class="pregunta">
+                        <summary>¿Hay menú especial para grupos?</summary>
+                        <p>Podemos armar combos y bandejas para compartir según el número de personas y tu presupuesto.</p>
+                    </details>
+                    <details class="pregunta">
+                        <summary>¿Cómo cancelo o cambio la fecha?</summary>
+                        <p>Escríbenos por WhatsApp con al menos 24 horas de aviso y buscamos otra fecha contigo.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="pie">
+        <div class="contenedor">
+            <div class="pie-rejilla">
+                <div>
+                    <p class="pie-marca">El Barrilito</p>
+                    <p class="pie-lema">Comida mexicana casera y conchería tradicional en San Miguel, El Salvador.</p>
+                </div>
+                <div>
+                    <h4>Navegar</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="index.html#menu">Carta</a></li>
+                        <li><a href="reservas.html">Reservas</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li>San Miguel, El Salvador</li>
+                        <li>Tel: (503) 2660-0000</li>
+                        <li>WhatsApp: (503) 7000-0000</li>
+                        <li>hola@elbarrilitosv.com</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Horario</h4>
+                    <ul>
+                        <li>Lun a jue: 10:00 a.m. a 8:00 p.m.</li>
+                        <li>Vie y sáb: 10:00 a.m. a 9:30 p.m.</li>
+                        <li>Domingo: 10:00 a.m. a 6:00 p.m.</li>
+                    </ul>
+                </div>
+            </div>
+            <p class="pie-legal">&copy; 2026 El Barrilito · Recreación con fines educativos, Guía 2 de Desarrollo Web I</p>
+        </div>
+    </footer>
+</body>
+</html>
